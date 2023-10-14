@@ -1,0 +1,75 @@
+@import '../../app/globals.scss';
+
+.footer {
+    height: 500px;
+    background-color: #213555;
+    padding: 100px;
+    @include mobile {
+        padding: 30px;
+        height: max-content;
+      }
+
+    .wrapper {
+        display: flex;
+        height: 100%;
+        @include mobile {
+            flex-direction: column;
+          }
+        .footerLeft{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            flex: 1;
+            @include mobile {
+                align-items: center;
+                justify-content: center;
+              }
+            .footerImgCont{
+                height: 500px;
+                width: 300px;
+                padding: 50px;
+                position: relative;
+                @include mobile {
+                    height: 200px;
+                    width: 200px;
+                  }
+            .footerLogo{
+                object-fit: contain;
+            
+            }
+        }
+            .contact{
+                color: white;
+                display: flex;
+                align-items: center;
+                @include mobile {
+                    width: 70%;
+                  }               
+                .navIcon{
+                    font-size: 40px;
+                    margin-right: 10px;
+                }
+            }
+
+        }
+
+        .footerRight {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @include mobile {
+                display: none;
+              }
+            a{
+                font-size: 20px;
+                text-align: left;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+        }   
+    }
+
+
+}
