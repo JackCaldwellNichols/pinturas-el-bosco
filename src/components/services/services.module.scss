@@ -54,7 +54,11 @@
             margin-top: 30px;
             &:hover {
                 background-color: #213555;
+             
             }
+            @include mobile {
+                width: 100%;
+              }
 
         }
          
@@ -124,6 +128,9 @@
             &:hover {
                 background-color: #213555;
             }
+            @include mobile {
+                width: 100%;
+              }
         }
         }
         .btmRight{

@@ -4,12 +4,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import styles from './nav.module.scss'
-import {BsPhone} from 'react-icons/bs'
+import {AiTwotonePhone} from 'react-icons/ai'
 
 
 const Navbar = () => {
-
-  
 
 
   return (
@@ -20,24 +18,24 @@ const Navbar = () => {
         </a>
       </div>
       <div className={styles.navCentre}>
-        <a href="" className={styles.navLink}>
-          Residencial
-        </a>
-        <a href="" className={styles.navLink}>
-          Comercial
-        </a>
-        <a href="" className={styles.navLink}>
+      <a href="#about" className={styles.navLink}>
           Sobre Nosotros
         </a>
-        <a href="" className={styles.navLink}>
+        <a href="#services" className={styles.navLink}>
+          Residencial
+        </a>
+        <a href="#services" className={styles.navLink}>
+          Comercial
+        </a>
+        <a href="#gallery" className={styles.navLink}>
           Nuestro Trabajo
         </a>
-        <a href="" className={styles.navLink}>
+        <a href="#contact" className={styles.navLink}>
           Contacto
         </a>
       </div>
       <div className={styles.navRight}>
-          <BsPhone className={styles.navIcon}/>
+          <AiTwotonePhone className={styles.navIcon}/>
           <span className={styles.phone}>612 456 123</span>
       </div>
     </div>

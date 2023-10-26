@@ -49,12 +49,12 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
         @include mobile {
             display: none;
           }
             .navIcon {
-                font-size: 40px;
+                font-size: 35px;
                 color: #F0F0F0;
                 @include mobile {
                     display: none;
